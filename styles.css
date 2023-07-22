@@ -1,5 +1,7 @@
 :root{
     --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-white: white;
 }
 
 body{
@@ -89,7 +91,27 @@ h1{
     margin: 0 auto 6rem auto;
 }
 
+.project_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+img{
+    display: block;
+    max-width: 400px;
+    height: 344px;
+    object-fit: cover;
+}
+
 .project_title{
-    display: flex;
-    flex-direction: coloum;
+    padding: 17px;
+    text-align: center;
+    max-width: 366px;
+    background-color: var(--main-gray);
+    margin-top: 0;
+    color: var(--main-white);
 }
