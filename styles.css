@@ -94,17 +94,24 @@ h1{
 .project_grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    max-width: 1280px;
+    grid-gap: 4rem;
     width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
+    margin-bottom: 6rem;
 }
 
 
+.project_image{
+    /* display: block; */
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
+    height: 344px;
+}
+
 img{
     display: block;
-    max-width: 400px;
-    height: 344px;
-    object-fit: cover;
 }
 
 .project_title{
